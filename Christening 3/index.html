@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Una Chan — Christening &amp; 1st Birthday Invitation</title>
+  <meta name="description" content="Join us to witness the Christening and celebrate the 1st Birthday of Una O. Bayonon (Una Chan) on January 3, 2027 at St. Joseph the Worker Parish Church, followed by reception at The Vines." />
+
+  <!-- Open Graph / Messenger & Facebook Link Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Una Chan — Christening &amp; 1st Birthday" />
+  <meta property="og:title" content="Una Chan — Christening &amp; 1st Birthday Invitation" />
+  <meta property="og:description" content="Sunday, January 3, 2027 • 11:30 AM Church • 1:00 PM Reception at The Vines. Tap to view invitation and RSVP." />
+  <meta property="og:url" content="https://websitespremiums.vercel.app/" />
+  <meta property="og:image" content="https://websitespremiums.vercel.app/assets/photos/og1.png?v=2" />
+  <meta property="og:image:secure_url" content="https://websitespremiums.vercel.app/assets/photos/og1.png?v=2" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Una Chan Christening &amp; 1st Birthday Invitation Preview" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Una Chan — Christening &amp; 1st Birthday Invitation" />
+  <meta name="twitter:description" content="Sunday, January 3, 2027 • 11:30 AM Church • 1:00 PM Reception at The Vines." />
+  <meta name="twitter:image" content="https://websitespremiums.vercel.app/assets/photos/og1.png?v=2" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="locked">
+
+  <!-- Floral Background Picture + Soft Pink & Yellow Glow + Animated Flowers -->
+  <div class="ambient-bg" aria-hidden="true">
+    <img
+      class="bg-photo"
+      data-candidates="assets/photos/background.jpg,assets/photos/background.png,assets/photos/Background.jpg,assets/photos/Background.png,assets/photos/bg-floral.jpg,assets/photos/bg-floral.png,photos/background.jpg,photos/bg-floral.jpg"
+      src="assets/photos/background.jpg"
+      alt=""
+      onerror="this.style.display='none'"
+    />
+    <div class="bg-photo-tint"></div>
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <div id="flower-container" class="flower-container"></div>
+  </div>
+
+  <!-- Floral Envelope Front Page (First Screen) -->
+  <div id="envelope-gate" class="envelope-gate" role="dialog" aria-modal="true" aria-label="Christening and 1st birthday invitation envelope">
+    <div class="gate-editorial-stage">
+      <header class="gate-header">
+        <p class="gate-script">Dearest</p>
+        <p class="gate-recipient">FAMILY, FRIENDS &amp; GODPARENTS</p>
+        <h2 class="gate-headline">BLESSED &amp; ONE</h2>
+
+        <div class="gate-divider" aria-hidden="true">
+          <span class="divider-line"></span>
+          <span class="divider-diamonds">
+            <i></i><i></i><i></i><i></i>
+          </span>
+          <span class="divider-line"></span>
+        </div>
+
+        <p class="gate-event-kicker">UNA O. BAYONON (UNA CHAN) • CHRISTENING &amp; 1ST BIRTHDAY</p>
+        <p class="gate-event-date">01.03.2027 • 11:30 AM</p>
+      </header>
+
+      <!-- Blossom Envelope with Gold Wax Seal -->
+      <div class="envelope-scene">
+        <div class="velvet-envelope" id="velvet-envelope">
+          <div class="envelope-letter-peek" aria-hidden="true">
+            <span>Christening &amp; 1st Birthday</span>
+            <strong>Una Chan</strong>
+          </div>
+
+          <div class="envelope-back"></div>
+          <div class="envelope-flap-top"></div>
+          <div class="envelope-pocket"></div>
+
+          <button
+            id="open-invitation-btn"
+            class="wax-seal-btn"
+            type="button"
+            aria-label="Tap the gold wax seal to open Una Chan's invitation"
+          >
+            <span class="wax-seal-outer" aria-hidden="true">
+              <span class="wax-seal-inner">
+                <span class="wax-monogram">UB</span>
+              </span>
+            </span>
+            <span class="wax-tap-hint">Tap Seal to Open</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Audio Bar -->
+  <aside id="audio-bar" class="audio-bar hidden" aria-label="Background music controls">
+    <button id="music-toggle-btn" class="audio-btn" type="button">
+      <span id="music-status-text">Play Music</span>
+    </button>
+    <span class="track-pill">Isn't She Lovely (Acoustic) — Mount Hayes</span>
+  </aside>
+
+  <main id="main-content" class="main-content">
+
+    <!-- 01. CELEBRANT HERO & PHOTO SLIDESHOW (Photo 1 to Photo 7) -->
+    <section id="celebrant" class="section hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker text-reveal" style="--stagger: 0.15s;">Christening &amp; 1st Birthday</p>
+          <h1 class="celebrant-name text-reveal" style="--stagger: 0.25s;">
+            Una O. <em>Bayonon</em>
+          </h1>
+          <p class="nickname-tag text-reveal" style="--stagger: 0.3s;">
+            Affectionately called <strong>“UNA CHAN”</strong>
+          </p>
+          <p class="hero-date text-reveal" style="--stagger: 0.35s;">
+            Sunday, January 3, 2027 • 11:30 AM Church • 1:00 PM Reception
+          </p>
+          <div class="hero-actions text-reveal" style="--stagger: 0.45s;">
+            <a href="#countdown" class="btn-primary">View Countdown</a>
+            <a href="#rsvp" class="btn-ghost">RSVP Now</a>
+          </div>
+        </div>
+
+        <div class="portrait-card text-reveal" style="--stagger: 0.3s;">
+          <div class="slideshow" id="debut-slideshow" aria-label="Celebrant photo slideshow">
+            <div class="slides-track">
+              <div class="slide active">
+                <img
+                  data-candidates="assets/photos/Photo%201.jpg,assets/photos/Photo%201.jpeg,assets/photos/photo%201.jpg,assets/photos/photo%201.jpeg,assets/photos/Photo%201.png,photos/Photo%201.jpg"
+                  src="assets/photos/Photo%201.jpg"
+                  alt="Una Chan Photo 1"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  data-candidates="assets/photos/Photo%202.jpg,assets/photos/Photo%202.jpeg,assets/photos/photo%202.jpg,assets/photos/photo%202.jpeg,assets/photos/Photo%202.png,photos/Photo%202.jpg"
+                  src="assets/photos/Photo%202.jpg"
+                  alt="Una Chan Photo 2"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  data-candidates="assets/photos/Photo%203.jpg,assets/photos/Photo%203.jpeg,assets/photos/photo%203.jpg,assets/photos/photo%203.jpeg,assets/photos/Photo%203.png,photos/Photo%203.jpg"
+                  src="assets/photos/Photo%203.jpg"
+                  alt="Una Chan Photo 3"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  data-candidates="assets/photos/Photo%204.jpg,assets/photos/Photo%204.jpeg,assets/photos/photo%204.jpg,assets/photos/photo%204.jpeg,assets/photos/Photo%204.png,photos/Photo%204.jpg"
+                  src="assets/photos/Photo%204.jpg"
+                  alt="Una Chan Photo 4"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  data-candidates="assets/photos/Photo%203.jpg,assets/photos/Photo%203.jpeg,assets/photos/photo%203.jpg,assets/photos/photo%203.jpeg,assets/photos/Photo%203.png,photos/Photo%203.jpg"
+                  src="assets/photos/Photo%203.jpg"
+                  alt="Una Chan Photo 5"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  data-candidates="assets/photos/Photo%202.jpg,assets/photos/Photo%202.jpeg,assets/photos/photo%202.jpg,assets/photos/photo%202.jpeg,assets/photos/Photo%202.png,photos/Photo%202.jpg"
+                  src="assets/photos/Photo%202.jpg"
+                  alt="Una Chan Photo 6"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  data-candidates="assets/photos/Photo%201.jpg,assets/photos/Photo%201.jpeg,assets/photos/photo%201.jpg,assets/photos/photo%201.jpeg,assets/photos/Photo%201.png,photos/Photo%201.jpg"
+                  src="assets/photos/Photo%201.jpg"
+                  alt="Una Chan Photo 7"
+                />
+              </div>
+            </div>
+
+            <button type="button" class="slide-btn prev-btn" id="debut-prev" aria-label="Previous photo">‹</button>
+            <button type="button" class="slide-btn next-btn" id="debut-next" aria-label="Next photo">›</button>
+
+            <div class="slide-dots" id="debut-dots" aria-label="Slideshow navigation"></div>
+          </div>
+
+          <div class="portrait-caption">
+            <span> • <strong id="debut-counter">1 / 7</strong></span>
+            <strong>Una Chan</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. COUNTDOWN SECTION -->
+    <section id="countdown" class="section section-alt reveal">
+      <div class="container narrow-container countdown-center">
+        <span class="section-label text-reveal">02 / Counting Down</span>
+        <h2 class="text-reveal">Until <em>Una Chan’s Special Day</em></h2>
+        <p class="section-desc center-desc text-reveal">
+          January 3, 2027 • Church at 11:30 AM • Reception at 1:00 PM
+        </p>
+
+        <div class="countdown-grid text-reveal" id="countdown-timer" aria-live="polite">
+          <div class="time-box">
+            <span id="cd-days">00</span>
+            <small>Days</small>
+          </div>
+          <div class="time-box">
+            <span id="cd-hours">00</span>
+            <small>Hours</small>
+          </div>
+          <div class="time-box">
+            <span id="cd-minutes">00</span>
+            <small>Minutes</small>
+          </div>
+          <div class="time-box">
+            <span id="cd-seconds">00</span>
+            <small>Seconds</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. INVITATION MESSAGE -->
+    <section id="message" class="section reveal">
+      <div class="container narrow-container">
+        <span class="section-label text-reveal">03 / Invitation Message</span>
+        <h2 class="text-reveal">A Blooming <em>Blessing</em></h2>
+        <p class="lead-message text-reveal">
+          With grateful hearts and joy, we warmly invite you to witness the Christening and
+          celebrate the 1st Birthday of our sweet baby girl,
+          <strong>Una O. Bayonon (UNA CHAN)</strong>. Your presence is more than enough. We don’t
+          expect any gifts. We’ll be happy to have you join us, feel at home, mingle with the
+          other guests, and enjoy some playtime with our baby girl, the celebrant!
+        </p>
+      </div>
+    </section>
+
+    <!-- 04. EVENT DETAILS -->
+    <section id="details" class="section section-alt reveal">
+      <div class="container">
+        <span class="section-label text-reveal">04 / Event Details</span>
+        <h2 class="text-reveal">Celebration <em>Details</em></h2>
+
+        <div class="cards-3">
+          <article class="info-card text-reveal">
+            <span class="info-tag">Date</span>
+            <strong>January 3, 2027</strong>
+            <small>Christening &amp; 1st Birthday</small>
+          </article>
+
+          <article class="info-card text-reveal">
+            <span class="info-tag">Church Ceremony</span>
+            <strong>11:30 AM</strong>
+            <small>St. Joseph the Worker Parish Church</small>
+          </article>
+
+          <article class="info-card text-reveal">
+            <span class="info-tag">Reception</span>
+            <strong>1:00 PM</strong>
+            <small>The Vines</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. CEREMONY (church 1 to 3) & RECEPTION VENUES (vines 1 to 3) -->
+    <section id="venue" class="section reveal">
+      <div class="container">
+        <span class="section-label text-reveal">05 / Ceremony &amp; Reception</span>
+        <h2 class="text-reveal">Ceremony &amp; <em>Reception Venues</em></h2>
+        <p class="section-desc text-reveal">
+          Join us first for the Christening ceremony at <strong>11:30 AM</strong> at St. Joseph the Worker Parish Church, followed by the reception at <strong>1:00 PM</strong> at The Vines.
+        </p>
+
+        <div class="venue-cards-grid">
+          <!-- Ceremony Card with church 1 to 3 Slideshow -->
+          <article class="venue-card text-reveal">
+            <div class="venue-badge">Ceremony • 11:30 AM</div>
+            <h3>St. Joseph the Worker Parish Church</h3>
+            <p class="venue-address">January 3, 2027 • 11:30 AM</p>
+
+            <div class="slideshow venue-card-slideshow" id="church-slideshow" aria-label="St. Joseph the Worker Parish Church photos">
+              <div class="slides-track">
+                <div class="slide active">
+                  <img
+                    data-candidates="assets/photos/church/church%201.png,assets/photos/church/Church%201.png,assets/photos/church/church%201.jpg,assets/photos/church/Church%201.jpg,photos/church/church%201.png,photos/church/church%201.jpg"
+                    src="assets/photos/church/church%201.png"
+                    alt="St. Joseph the Worker Parish Church 1"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    data-candidates="assets/photos/church/church%202.jpg,assets/photos/church/church%202.jpeg,assets/photos/church/Church%202.jpg,assets/photos/church/church%202.png,assets/photos/church/church%202.jpg"
+                    src="assets/photos/church/church%202.jpg"
+                    alt="St. Joseph the Worker Parish Church 2"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    data-candidates="assets/photos/church/church%203.jpg,assets/photos/church/church%203.jpeg,assets/photos/church/Church%203.jpg,assets/photos/church/church%203.png,assets/photos/church/church%203.jpg"
+                    src="assets/photos/church/church%203.jpg"
+                    alt="St. Joseph the Worker Parish Church 3"
+                  />
+                </div>
+              </div>
+              <button type="button" class="slide-btn prev-btn" id="church-prev" aria-label="Previous church photo">‹</button>
+              <button type="button" class="slide-btn next-btn" id="church-next" aria-label="Next church photo">›</button>
+              <div class="slide-dots" id="church-dots" aria-label="Church slideshow indicators"></div>
+            </div>
+
+            <div class="venue-actions">
+              <a
+                href="https://maps.app.goo.gl/exCPJ8zRA9QnhfDaA?g_st=ic"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-primary"
+              >
+                Open Ceremony Map ↗
+              </a>
+            </div>
+
+            <div class="qr-box">
+              <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https%3A%2F%2Fmaps.app.goo.gl%2FexCPJ8zRA9QnhfDaA%3Fg_st%3Dic"
+                alt="QR Code for St. Joseph the Worker Parish Church"
+                width="112"
+                height="112"
+              />
+              <div>
+                <strong>Ceremony Location QR</strong>
+                <p>Scan to navigate to St. Joseph the Worker Parish Church.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Reception Card with vines 1 to 3 Slideshow & Same Animations -->
+          <article class="venue-card venue-card-reception text-reveal">
+            <div>
+              <div class="venue-badge venue-badge-yellow">Reception • 1:00 PM</div>
+              <h3>The Vines</h3>
+              <p class="venue-address">January 3, 2027 • 1:00 PM</p>
+
+              <div class="slideshow venue-card-slideshow" id="reception-slideshow" aria-label="The Vines reception photos">
+                <div class="slides-track">
+                  <div class="slide active">
+                    <img
+                      data-candidates="assets/photos/reception/vines%201.jpg,assets/photos/reception/vines%201.jpeg,assets/photos/reception/Vines%201.jpg,assets/photos/reception/vines%201.png,assets/photos/reception/Vines%201.png,assets/photos/reception/vines%201.jpg"
+                      src="assets/photos/reception/vines%201.jpg"
+                      alt="The Vines Reception 1"
+                    />
+                  </div>
+                  <div class="slide">
+                    <img
+                      data-candidates="assets/photos/reception/vines%202.jpg,assets/photos/reception/vines%202.jpeg,assets/photos/reception/Vines%202.jpg,assets/photos/reception/vines%202.png,assets/photos/reception/Vines%202.png,assets/photos/reception/vines%202.jpg"
+                      src="assets/photos/reception/vines%202.jpg"
+                      alt="The Vines Reception 2"
+                    />
+                  </div>
+                  <div class="slide">
+                    <img
+                      data-candidates="assets/photos/reception/vines%203.jpg,assets/photos/reception/vines%203.jpeg,assets/photos/reception/Vines%203.jpg,assets/photos/reception/vines%203.png,assets/photos/reception/Vines%203.png,assets/photos/reception/vines%203.jpg"
+                      src="assets/photos/reception/vines%203.jpg"
+                      alt="The Vines Reception 3"
+                    />
+                  </div>
+                </div>
+                <button type="button" class="slide-btn prev-btn" id="reception-prev" aria-label="Previous reception photo">‹</button>
+                <button type="button" class="slide-btn next-btn" id="reception-next" aria-label="Next reception photo">›</button>
+                <div class="slide-dots" id="reception-dots" aria-label="Reception slideshow indicators"></div>
+              </div>
+
+              <p class="venue-note">
+                Following the Christening ceremony at St. Joseph the Worker Parish Church at 11:30 AM,
+                please join us at The Vines at 1:00 PM for fellowship, celebration, and playtime with Una Chan.
+              </p>
+            </div>
+
+            <div>
+              <div class="venue-actions">
+                <a
+                  href="https://maps.app.goo.gl/oBzuxi9RxD83hcHz6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-primary"
+                >
+                  Open Reception Map ↗
+                </a>
+              </div>
+
+              <div class="qr-box">
+                <img
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https%3A%2F%2Fmaps.app.goo.gl%2FoBzuxi9RxD83hcHz6"
+                  alt="QR Code for The Vines Reception"
+                  width="112"
+                  height="112"
+                />
+                <div>
+                  <strong>Reception Location QR</strong>
+                  <p>Scan to navigate to The Vines.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. GIFT IDEAS WITH ANIMATED GIFT BOX -->
+    <section id="monetary-gift" class="section section-alt reveal">
+      <div class="container narrow-container">
+        <div class="gift-panel text-reveal">
+          <span class="section-label">06 / Gift Ideas</span>
+
+          <!-- Animated Floral & Gold Gift Box -->
+          <div class="gift-box-stage" aria-hidden="true">
+            <div class="gift-box">
+              <div class="gift-lid">
+                <span class="gift-bow-left"></span>
+                <span class="gift-bow-right"></span>
+                <span class="gift-bow-knot"></span>
+              </div>
+              <div class="gift-body">
+                <span class="gift-ribbon-v"></span>
+                <span class="gift-ribbon-h"></span>
+              </div>
+            </div>
+          </div>
+
+          <p class="gift-message">
+            If you wish to give a gift, baby lotion, body wash, children’s books, or clothes (size 1–2 years old) would be greatly appreciated.
+          </p>
+          <p class="gift-message" style="margin-top: 12px;">
+            We kindly ask for NO TOYS, especially large or heavy ones, as we’ll be bringing everything back to Japan.
+          </p>
+          <p class="gift-message" style="margin-top: 12px; font-weight: 600; color: var(--pink-deep);">
+            Thank you so much for your understanding and generosity! ❤️
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. DRESS CODE WITH ANIMATED CLOTHES -->
+    <section id="dresscode" class="section reveal">
+      <div class="container narrow-container">
+        <div class="gift-panel dresscode-panel text-reveal">
+          <span class="section-label">07 / Dress Code</span>
+          <h2>Simple Formal <em>Attire</em></h2>
+
+          <!-- Animated Clothes on Hanger -->
+          <div class="clothes-stage" aria-hidden="true">
+            <div class="clothes-sway">
+              <svg viewBox="0 0 140 120" width="126" height="108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M70 12C70 7.5 74.5 5 78 8C81 10.5 79.5 15 74 17L70 19" stroke="#B58214" stroke-width="3.2" stroke-linecap="round"/>
+                <path d="M70 19L30 40H110L70 19Z" stroke="#D4A834" stroke-width="3" stroke-linejoin="round" fill="#FFFDF7"/>
+                <path d="M44 40L32 56L44 63L48 53V98C48 101.3 50.7 104 54 104H86C89.3 104 92 101.3 92 98V53L96 63L108 56L96 40H82C80 46 75.5 49 70 49C64.5 49 60 46 58 40H44Z" fill="url(#dressGrad)" stroke="#C94B7B" stroke-width="2.4" stroke-linejoin="round"/>
+                <rect x="48" y="66" width="44" height="8" rx="3" fill="#FFE066" stroke="#D4A834" stroke-width="1.5"/>
+                <circle cx="70" cy="70" r="6" fill="#FF85B3" stroke="#FFFDF7" stroke-width="1.5"/>
+                <circle cx="70" cy="70" r="2.2" fill="#FFF3B0"/>
+                <defs>
+                  <linearGradient id="dressGrad" x1="32" y1="40" x2="108" y2="104" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#FFD6E7"/>
+                    <stop offset="100%" stop-color="#FF9EC2"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+
+          <p class="gift-message">
+            Simple Formal Attire. White is preferred, but any color is perfectly fine. 🤍
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08. UNA CHAN PICTURE ALBUM & VIDEO CLIP (Photo 1 to Photo 7 + Video Clip Below) -->
+    <section id="gallery" class="section section-alt reveal">
+      <div class="container">
+        <span class="section-label text-reveal">08 / Precious Moments</span>
+        <h2 class="text-reveal">Una Chan’s <em>Picture Album</em></h2>
+        <p class="section-desc text-reveal">
+          Sweet snapshots of Una Chan and a special video clip right below. Tap any photo to view larger.
+        </p>
+
+        <div class="gallery-split-grid">
+          <!-- Left Column -->
+          <div class="gallery-col">
+            <figure class="gallery-item text-reveal" data-gallery-index="0">
+              <img
+                data-candidates="assets/photos/Photo%201.jpg,assets/photos/Photo%201.jpeg,assets/photos/photo%201.jpg,assets/photos/photo%201.jpeg,assets/photos/Photo%201.png,photos/Photo%201.jpg"
+                src="assets/photos/Photo%201.jpg"
+                alt="Una Chan Photo 1"
+              />
+              <figcaption>Moment 01 • Una Chan</figcaption>
+            </figure>
+
+            <figure class="gallery-item text-reveal" data-gallery-index="1">
+              <img
+                data-candidates="assets/photos/Photo%202.jpg,assets/photos/Photo%202.jpeg,assets/photos/photo%202.jpg,assets/photos/photo%202.jpeg,assets/photos/Photo%202.png,photos/Photo%202.jpg"
+                src="assets/photos/Photo%202.jpg"
+                alt="Una Chan Photo 2"
+              />
+              <figcaption>Moment 02 • Sweet Smiles</figcaption>
+            </figure>
+
+            <figure class="gallery-item text-reveal" data-gallery-index="2">
+              <img
+                data-candidates="assets/photos/Photo%203.jpg,assets/photos/Photo%203.jpeg,assets/photos/photo%203.jpg,assets/photos/photo%203.jpeg,assets/photos/Photo%203.png,photos/Photo%203.jpg"
+                src="assets/photos/Photo%203.jpg"
+                alt="Una Chan Photo 3"
+              />
+              <figcaption>Moment 03 • Little Blossom</figcaption>
+            </figure>
+          </div>
+
+          <!-- Right Column -->
+          <div class="gallery-col">
+            <figure class="gallery-item text-reveal" data-gallery-index="3">
+              <img
+                data-candidates="assets/photos/Photo%204.jpg,assets/photos/Photo%204.jpeg,assets/photos/photo%204.jpg,assets/photos/photo%204.jpeg,assets/photos/Photo%204.png,photos/Photo%204.jpg"
+                src="assets/photos/Photo%204.jpg"
+                alt="Una Chan Photo 4"
+              />
+              <figcaption>Moment 04 • Pure Joy</figcaption>
+            </figure>
+
+            <figure class="gallery-item text-reveal" data-gallery-index="4">
+              <img
+                data-candidates="assets/photos/Photo%205.jpg,assets/photos/Photo%205.jpeg,assets/photos/photo%205.jpg,assets/photos/photo%205.jpeg,assets/photos/Photo%205.png,photos/Photo%205.jpg"
+                src="assets/photos/Photo%205.jpg"
+                alt="Una Chan Photo 5"
+              />
+              <figcaption>Moment 05 • Sunshine Days</figcaption>
+            </figure>
+
+            <figure class="gallery-item text-reveal" data-gallery-index="5">
+              <img
+                data-candidates="assets/photos/Photo%206.jpg,assets/photos/Photo%206.jpeg,assets/photos/photo%206.jpg,assets/photos/photo%206.jpeg,assets/photos/Photo%206.png,photos/Photo%206.jpg"
+                src="assets/photos/Photo%206.jpg"
+                alt="Una Chan Photo 6"
+              />
+              <figcaption>Moment 06 • Turning One</figcaption>
+            </figure>
+
+            <figure class="gallery-item text-reveal" data-gallery-index="6">
+              <img
+                data-candidates="assets/photos/Photo%207.jpg,assets/photos/Photo%207.jpeg,assets/photos/photo%207.jpg,assets/photos/photo%207.jpeg,assets/photos/Photo%207.png,photos/Photo%207.jpg"
+                src="assets/photos/Photo%207.jpg"
+                alt="Una Chan Photo 7"
+              />
+              <figcaption>Moment 07 • Blessed &amp; One</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Video Clip Under the Picture Album -->
+        <div class="video-clip-card text-reveal">
+          <div class="video-clip-header">
+            <span class="venue-badge">Video Clip</span>
+            <h3>Una Chan’s Special Clip</h3>
+          </div>
+          <div class="video-clip-frame">
+            <video
+              id="una-video-clip"
+              controls
+              playsinline
+              preload="metadata"
+              poster="assets/photos/Photo%201.jpg"
+            >
+              <source src="assets/videos/una-clip.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09. GODPARENTS (NINONG & NINANG) -->
+    <section id="godparents" class="section reveal">
+      <div class="container">
+        <span class="section-label text-reveal">09 / Baptismal Sponsors</span>
+        <h2 class="text-reveal">Ninong &amp; <em>Ninang</em></h2>
+        <p class="section-desc text-reveal">
+          Guiding and praying for <strong>Una Chan</strong> as she grows in faith and joy.
+        </p>
+
+        <div class="godparents-grid">
+          <article class="godparent-card text-reveal">
+            <h3>Ninong <span class="count-pill">12</span></h3>
+            <ul class="two-col-list">
+              <li>RONNIE BAYONON</li>
+              <li>PETER JOHN GARCIA</li>
+              <li>JOHN CARL MALAYO</li>
+              <li>JOM TABORA</li>
+              <li>MELANIO M CASILLAR JR.</li>
+              <li>ROMMEL DE LUNA</li>
+              <li>JOEL MONTE</li>
+              <li>MICHAEL SAYCON</li>
+              <li>JAYSON SOLIJON</li>
+              <li>BRYAN CAPENTES</li>
+              <li>ROBIN CERCENIA</li>
+              <li>DUSTIN DEL ROSARIO</li>
+            </ul>
+          </article>
+
+          <article class="godparent-card text-reveal">
+            <h3>Ninang <span class="count-pill">12</span></h3>
+            <ul class="two-col-list">
+              <li>ALLIYAH GWYNETH MC DONOUGH</li>
+              <li>TERESA B. MAGTALAS</li>
+              <li>ROSELYN BAYONON</li>
+              <li>NOAHRICA ACABAL ABALOS</li>
+              <li>BELLA ISOGAI</li>
+              <li>PRINCESS MAE MAGTALAS</li>
+              <li>JEMBERLY TORRES</li>
+              <li>ROSEMARIE PABLICO</li>
+              <li>NICOLE MENDOZA</li>
+              <li>MARIE FE BULAWAN</li>
+              <li>AYKA IMSON</li>
+              <li>CECILLE BONUEL MAHINAY</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. RSVP & ATTENDANCE -->
+    <section id="rsvp" class="section section-alt reveal">
+      <div class="container narrow-container">
+        <div class="rsvp-card-box text-reveal">
+          <span class="section-label rsvp-eyebrow">10 / Kindly Respond by December 20, 2026</span>
+          <h2 class="rsvp-heading">RSVP &amp; <em>ATTENDANCE</em></h2>
+
+          <form id="rsvp-form" class="rsvp-form">
+            <div class="field">
+              <label for="fullName">Your Full Name</label>
+              <input id="fullName" name="fullName" type="text" required placeholder="Enter your full name" />
+            </div>
+
+            <div class="field">
+              <label>Will you grace us with your presence?</label>
+              <div class="radio-group">
+                <label class="radio-option">
+                  <input type="radio" name="attendance" value="Yes, I would love to attend." required />
+                  <span>Yes, I would love to attend.</span>
+                </label>
+
+                <label class="radio-option">
+                  <input type="radio" name="attendance" value="Yes, I will attend with my kid/s." />
+                  <span>Yes, I will attend with my kid/s.</span>
+                </label>
+
+                <label class="radio-option">
+                  <input type="radio" name="attendance" value="Declines with regret." />
+                  <span>Declines with regret.</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Dynamic Kid/s Name(s) Section -->
+            <div id="kids-section" class="field hidden">
+              <label>Kid/s Name(s)</label>
+              <div id="kids-inputs-list" class="kids-inputs-list">
+                <div class="kid-row">
+                  <input type="text" name="kidName[]" placeholder="Kid 1 Full Name" />
+                </div>
+              </div>
+              <button type="button" id="add-kid-btn" class="add-kid-btn">+ Add Another Kid</button>
+            </div>
+
+            <!-- Companion Name -->
+            <div id="companion-section" class="field">
+              <label for="companionName">Companion Name (If bringing an adult companion)</label>
+              <input id="companionName" name="companionName" type="text" placeholder="Enter companion's name (optional)" />
+            </div>
+
+            <!-- Guest & RSVP Note -->
+            <div class="rsvp-policy-note">
+              <span aria-hidden="true">🌸</span>
+              <p>
+                <strong>RSVP Deadline: December 20, 2026.</strong> Your presence is more than enough. We don’t expect any gifts. We’ll be happy to have you join us, feel at home, mingle with the other guests, and enjoy some playtime with our baby girl, the celebrant!
+              </p>
+            </div>
+
+            <button type="submit" id="rsvp-submit-btn" class="confirm-rsvp-btn">CONFIRM RSVP</button>
+            <p id="rsvp-status" class="rsvp-status" aria-live="polite"></p>
+          </form>
+
+          <p class="powered-by">Powered by ARC's Collection</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Una O. Bayonon (Una Chan) • Jan 3, 2027 • St. Joseph the Worker Parish Church &amp; The Vines</p>
+      <a href="#celebrant">Back to Top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Click-to-Enlarge Gallery Lightbox Modal -->
+  <div id="gallery-lightbox" class="lightbox-modal hidden" role="dialog" aria-modal="true" aria-label="Enlarged gallery photo viewer">
+    <button type="button" id="lightbox-close" class="lightbox-close" aria-label="Close photo viewer">×</button>
+    <button type="button" id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="Previous gallery photo">‹</button>
+
+    <div class="lightbox-stage">
+      <img id="lightbox-img" src="" alt="" />
+      <div class="lightbox-meta">
+        <p id="lightbox-caption"></p>
+        <span id="lightbox-counter">1 / 7</span>
+      </div>
+    </div>
+
+    <button type="button" id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="Next gallery photo">›</button>
+  </div>
+
+  <!-- Background Audio: Isn't She Lovely (Acoustic Version) by Mount Hayes -->
+  <audio id="bg-audio" loop preload="auto">
+    <source src="assets/audio/isnt-she-lovely-acoustic-mount-hayes.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
